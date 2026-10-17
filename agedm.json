@@ -1,17 +1,21 @@
 {
-  "name": "Age动漫",
-  "description": "基于 agedm.io 的完整数据源",
-  "iconUrl": "https://www.agedm.io/favicon.ico",
-  "searchUrl": "https://www.agedm.io/search?query={keyword}",
-  "baseUrl": "https://www.agedm.io",
-  "subjectFormatId": "indexed",
-  "selectorSubjectFormatIndexed": {
-    "selectNames": "h5.card-title > a",
-    "selectLinks": "h5.card-title > a"
-  },
-  "channelFormatId": "no-channel",
-  "selectorChannelFormatNoChannel": {
-    "selectEpisodes": "a.video_detail_spisode_link, a:has(.video_play_status)",
-    "matchEpisodeSort": "第\\s*(?<ep>\\d+)\\s*[集话]"
-  }
+  "mediaSources": [
+    {
+      "name": "Age动漫",
+      "description": "基于 agedm.io 的完整数据源",
+      "iconUrl": "https://www.agedm.io/favicon.ico",
+      "searchUrl": "https://www.agedm.io/search?query={keyword}",
+      "baseUrl": "https://www.agedm.io",
+      "subjectFormatId": "indexed",
+      "selectorSubjectFormatIndexed": {
+        "selectNames": "h5.card-title > a",
+        "selectLinks": "h5.card-title > a"
+      },
+      "channelFormatId": "no-channel",
+      "selectorChannelFormatNoChannel": {
+        "selectEpisodes": "a.video_detail_spisode_link, a:has(.video_play_status)",
+        "matchEpisodeSort": "第\\s*(?<ep>\\d+)\\s*[集话]"
+      }
+    }
+  ]
 }
