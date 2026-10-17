@@ -1,6 +1,6 @@
 {
   "name": "Age动漫",
-  "description": "基于 agedm.io 的 Selector 数据源",
+  "description": "基于 agedm.io 的完整数据源",
   "iconUrl": "https://www.agedm.io/favicon.ico",
   "searchUrl": "https://www.agedm.io/search?query={keyword}",
   "baseUrl": "https://www.agedm.io",
@@ -11,6 +11,7 @@
   },
   "channelFormatId": "no-channel",
   "selectorChannelFormatNoChannel": {
-    "selectEpisodes": "a[href*='/play/']"
+    "selectEpisodes": "a.video_detail_spisode_link, a:has(.video_play_status)",
+    "matchEpisodeSort": "第\\s*(?<ep>\\d+)\\s*[集话]"
   }
 }
